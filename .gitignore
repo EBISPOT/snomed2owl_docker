@@ -1,0 +1,8 @@
+
+.DS_Store
+.ipynb_checkpoints/snomed_mapping-checkpoint.ipynb
+mapping.tsv
+mapping_extended.tsv
+mapping_simple.tsv
+snomed_mapping_oxo.csv
+snomed_mapping_oxo_old.csv

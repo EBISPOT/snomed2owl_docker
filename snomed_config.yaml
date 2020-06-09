@@ -1,0 +1,60 @@
+meta:
+  - comment: "icd metadata codes: https://confluence.ihtsdotools.org/display/RMT/SNOMED+CT+Managed+Service+-+US+Edition+Mapping+SNOMED+CT+to+ICD-10-CM+Technical+Specifications+-+March+2020"
+  - comment: "Module codes: https://confluence.ihtsdotools.org/display/DOCEXTPG/4.2+Modules"
+mapCategoryId:
+  - snomedid: 447637006
+    label:  "Map source concept is properly classified"
+    description: "The map source concept is properly classified ( 447637006 |Map source concept is properlyclassified|) within
+the target ICD 10 classification for this Map member, so no additional data is necessary for selection of this
+target code of the map (Exemplar: One to one: #1-10)."
+  - id: 447638001
+    label: "The map source concept cannot be classified"
+    description: "The map source concept cannot be classified ( 447638001 |Map source concept cannotbe classified with available data|) and cannot be assigned a target. This may be chosen when the source concept is not appropriate for assignment of an ICD-10 classification. (Exemplar: NotClassifiable: #1-19), when the source concept cannot be assigned a granular classification specified by ICD-10, as a default map when context must be employed for an accurate map or when the source concept must specify gender or age for assignment of an ICD-10 classification and context is not specified (Exemplar: Gender: #3-5)."
+  - id: 447639009
+    label: "The map is context dependent"
+    description: "The map is context dependent (447639009 |Map of source concept is context dependent|) and requires additional patient information for accurate mapping as specified in the Map Rule (Exemplars:Gender:#3-5)"
+  - id: 447640006
+    label: "The source concept is ambiguous"
+    description: "The source concept is ambiguous (447640006 |Source SNOMED concept is ambiguous|) in its SNOMED CT definition; ambiguity is undergoing resolution before map classification can be concluded.  See definition of ambiguity in 11.1.1."
+  - id: 447635003
+    label: "Guidance from NCHS is ambiguous"
+    description: "Guidance from NCHS is ambiguous (447635003 |Mapping guidance from NCHS is ambiguous|) relative to the map target; awaiting clarification from NCHS"
+  - id: 447641005
+    label: "The source SNOMED CT concept is incompletely modeled"
+    description: "The source SNOMED CT concept is incompletely modeled (447641005 |Source SNOMED concept is incompletely modeled|). This may occur if the source SNOMED CT concept does not have a complete set of subtypes that would be expected for ICD coding, or if the source concept is understandable but not comprehensively defined (Exemplars:Incomplete tab which includes an exhaustive analysis of the source concept 274134003 |leukoplakia (disorder)|)"
+moduleId:
+  - id: 449080006
+    label: "SNOMED CT to ICD-10 rule-based mapping module"
+    maintainer: "SNOMED International"
+  - id: 731000124108
+    label: "US National Library of Medicine maintained module"
+    maintainer: "US National Library of Medicine – Member"
+  - id: 22091000087100
+    label: "Canada Health Infoway Reference Set Module"
+    maintainer: "Canada Health Infoway – Member"
+  - id: 999000011000000103
+    label: "SNOMED CT United Kingdom clinical extension module"
+    maintainer: "NHS Digital (UK) – Member"
+refsetId:
+  - id: 447562003
+    label: "ICD-10 complex map reference set"
+    curie_prefix: ICD10CM
+  - id: 446608001
+    label: "ICD-O simple map reference set"
+    curie_prefix: ICDO
+  - id: 900000000000497000
+    label: "CTV3 simple map reference set"
+    curie_prefix: CTV3
+snomed:
+  alternateIris: null
+  name: "SNOMED CT International"
+  source: "ONTOLOGY"
+  idorgNamespace: ""
+  alternatePrefix: 
+    - "SNOMEDCT"
+    - "SNOMED"
+  prefix: "SNOMEDCT"
+  licence: "https://www.nlm.nih.gov/healthit/snomedct/snomed_licensing.html"
+  orcid: null
+  versionInfo: ""
+  preferredPrefix: "SNOMEDCT"
