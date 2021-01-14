@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
+make docker-build
 
-docker run -v /Users/matentzn/ws/snomed_test_data/:/work -e SNOMED_ZIP="/work/SnomedCT_InternationalRF2_PRODUCTION_20200131T120000Z.zip" --rm -ti sno
+SNOMED_VERSION="20200731"
+#SNOMED_ARCHIVE="SnomedCT_InternationalRF2_PRODUCTION_${SNOMED_VERSION}T120000Z.zip"
+docker run -v $PWD/:/work -e SNOMED_VERSION="$SNOMED_VERSION" --rm -ti ebispot/snomed-owl
